@@ -1,0 +1,373 @@
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+    background-color: black;
+}
+
+nav {
+    gap: 2em;
+}
+
+nav > p {
+    color: white;
+    font-weight: bold;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #1E1E1E;
+}
+
+.search-input {
+    padding: 5px 10px 5px 35px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    width: 130px;
+}
+
+.start-button {
+    background-color: #6200EE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button {
+    background-color: #6200EE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700B3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: #6200EE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(98, 0, 238, 0.2);
+}
+
+
+.start-button:hover {
+    background-color: #3700B3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:active {
+    background-color: #6200EE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(98, 0, 238, 0.2);
+}
+.search-input:focus {
+    outline: none;
+    border: 1px solid #1E1E1E;
+}
+
+.header {
+    background-color: #D9D9D9;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.ui-base {
+    width: 315px;
+    height: 700px;
+    background-color: #D9D9D9;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+}
+
+nav {
+    background-color: #D9D9D9;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-top: 1px solid black;
+}
+
+.nav-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.quiz-description {
+    background-color: white;
+}
+
+.quiz-question-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-question-container > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.quiz-div {
+    padding-bottom: 0.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-option {
+    width: 45%;
+    padding: 0.75em;
+    margin: 0.5em 0;
+}
+
+.quiz-submit-button {
+    width: 90%;
+    background-color: #cf4f82;
+    padding: 0.75em;
+    margin: 0.5em 0;
+}
+
+.quiz-submit-button:hover {
+    background-color: #a43f6c;
+}
+
+.quiz-submit-button:active {
+    background-color: #cf4f82;
+}
+
+.quiz-submit-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(207, 79, 130, 0.2);
+}
+
+
+
+
+
+.add-button {
+    width: 90%;
+    background-color: #cf4f82;
+    padding: 0.75em;
+    margin: 0.5em 0;
+}
+
+.add-button:hover {
+    background-color: #a43f6c;
+}
+
+.add-button:active {
+    background-color: #cf4f82;
+}
+
+.add-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(207, 79, 130, 0.2);
+}
+
+
+
+.quiz-question {
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
+.fixed {
+    position: fixed;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+a {
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.result-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.3em;
+}
+
+.img-container > img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.question-add-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.result-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.result-card h3 {
+    margin: 0.5em 0;
+}
+.result-card p {
+    margin: 0;
+}
+
+.material-icons:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
